@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/practica02_motor.dir/link.d CMakeFiles/practica02_motor.dir/src/main.cpp.o -o practica02_motor  /usr/lib/x86_64-linux-gnu/libSDL3.so.0.4.2

@@ -1,0 +1,3 @@
+/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles/practica02_motor.dir
+/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles/edit_cache.dir
+/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles/rebuild_cache.dir
