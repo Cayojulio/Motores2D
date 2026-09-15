@@ -1,25 +1,23 @@
+# Captura de pantalla de la aplicación ejecutándose con el jugador y al menos una
+
+# Explica el rol de dynamic_cast en GetComponent<T>() y cómo permite la comunicación
+
+
+
 # Nombre completo y usuario:
 
 Julio Emmanuel Bautista Apolinar y Cayojulio
 
-# Demostracion y calculo matematico del error diagonal: explica con tus propias palabras
+# Justificación teórica: explica por qué std::vector<std::unique_ptr<Component>> previene el problema del Object Slicing y qué ocurriría si se usara un vector de objetos directos std::vector<Component>
 
-El vector direccion se mueve a los lados y arriba hacia abajo en una magnitud vectorial de 1, pero al presionar 2 teclas al mismo tiempo, la magnitud del vector resultante es sqrt(2) el cual es mas grande que 1 y se mueve mas rapido
+Cuando creas el vector se da una cierta memoria a cada componente igual a la memoria que ocuparia solo Component pero a la hora de poner una clase derivada va  tener Component mas cosas extras, por lo cual ocupa mas espacio y recorta ese sobrante, perdiendo informacion 
 
-# Captura del personaje en movimiento
+# Explica el rol de dynamic_cast en GetComponent<T>() y cómo permite la comunicación
 
-![](/home/cayo/snap/marktext/9/.config/marktext/images/2026-09-10-21-06-35-image.png)
+GetComponent busca un tipo de clase y lo que hace es ver todo el vector de componentes de un objeto y con dynamic_cast verifica cual de todo es del tipo solicitado y una vez localizado ya lo retorna
 
-# Captura o enlace a tu commit en Github
+# Captura de pantalla de la aplicación ejecutándose con el jugador y al menos una
 
-https://github.com/Cayojulio/practica02-motor
+![](/home/cayo/snap/marktext/9/.config/marktext/images/2026-09-14-22-08-46-image.png)
 
-# si realizaste el ejercicio opcional incluye una captura y explica brevemente
-
-en el actualizador de fisicas solo puse un if para detectar si de ejecutar las fisicas pero antes de renderizar, algun borde del cuadrado llega al limite y en vez de moverlo con el desplazamiento lo mantiene en la coordenada 0 sea x o y depende de donde haya tocado el borde
-
-![](/home/cayo/snap/marktext/9/.config/marktext/images/2026-09-11-01-34-13-image.png)
-
-
-
-
+# Enlace o captura al commit en GitHub.

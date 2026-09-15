@@ -75,7 +75,6 @@ practica02_motor: \
   /usr/lib/x86_64-linux-gnu/libdbus-1.so.3 \
   /usr/lib/i386-linux-gnu/libexpat.so.1 \
   /usr/lib/x86_64-linux-gnu/libexpat.so.1 \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libgcc_s.so.1 \
   /usr/lib/i386-linux-gnu/libffi.so.8 \
   /usr/lib/x86_64-linux-gnu/libffi.so.8 \
   /usr/lib/i386-linux-gnu/libXau.so.6 \
@@ -259,8 +258,6 @@ CMakeFiles/practica02_motor.dir/src/main.cpp.o:
 /usr/lib/i386-linux-gnu/libexpat.so.1:
 
 /usr/lib/x86_64-linux-gnu/libexpat.so.1:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libgcc_s.so.1:
 
 /usr/lib/i386-linux-gnu/libffi.so.8:
 

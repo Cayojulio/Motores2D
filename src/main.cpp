@@ -1,57 +1,52 @@
 #define SDL_MAIN_USE_CALLBACKS 1
-#include <cmath>
+
+#include <vector>
+#include <memory>
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
+
 #include "Vector2.hpp"
+#include "GameObject.hpp"
+#include "TransformComponent.hpp"
+#include "RectRenderComponent.hpp"
+#include "PlayerControllerComponent.hpp"
+#include "PatrolComponent.hpp"
+
 void SDL_LogPlatformInfo();
-struct Character
-{
-Vector2 position{440.0f, 240.0f};
-Vector2 size{60.0f, 60.0f};
-float speed{300.0f};
-SDL_Color color{60, 180, 100, 255};
-};
 
 struct AppState
 {
 SDL_Renderer *renderer{nullptr};
 SDL_Window *window{nullptr};
 Uint64 last_ticks{0};
-Character player;
 float physics_accumulator{0.0f};
+// Colección de todas las entidades activas en el mundo
+std::vector<std::unique_ptr<GameObject>> entities;
 } appstate;
 
-void PhysicsUpdate(Character &character, const Vector2 &direction, float fixed_dt)
-{
- Vector2 displacement = direction * (character.speed * fixed_dt);
- character.position = character.position + displacement;
- 
-// 2. Límites de la pantalla
-    constexpr float SCREEN_WIDTH  = 960.0f;
-    constexpr float SCREEN_HEIGHT = 540.0f;
-
-    if (character.position.x < 0.0f)
-    {
-        character.position.x = 0.0f;
-    }
-    else if (character.position.x > SCREEN_WIDTH - character.size.x)
-    {
-        character.position.x = SCREEN_WIDTH - character.size.x;
-    }
-
-    if (character.position.y < 0.0f)
-    {
-        character.position.y = 0.0f;
-    }
-    else if (character.position.y > SCREEN_HEIGHT - character.size.y)
-    {
-        character.position.y = SCREEN_HEIGHT - character.size.y;
-    }
-}
 
 
 SDL_AppResult SDL_AppInit(void **appstate, int argc, char **argv)
 {
+    // Armamos del Jugador
+auto player = std::make_unique<GameObject>("Player");
+player->AddComponent<TransformComponent>(Vector2{440.0f, 240.0f},
+Vector2{1.0f, 1.0f});
+player->AddComponent<RectRenderComponent>(Vector2{60.0f, 60.0f},
+SDL_Color{60, 180, 100, 255});
+player->AddComponent<PlayerControllerComponent>(300.0f, true);
+::appstate.entities.push_back(std::move(player));
+
+// Entidad Obstáculo: reutiliza Transform y RectRender sin necesitar PlayerController
+auto obstacle = std::make_unique<GameObject>("Obstacle");
+obstacle->AddComponent<TransformComponent>(Vector2{150.0f, 120.0f},
+Vector2{1.5f, 1.5f});
+obstacle->AddComponent<RectRenderComponent>(Vector2{40.0f, 40.0f},
+SDL_Color{220, 70, 70, 255});
+obstacle->AddComponent<PatrolComponent>(120.0f, 100.0f);
+::appstate.entities.push_back(std::move(obstacle));
+
+
     if (!SDL_Init(SDL_INIT_VIDEO))
     {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Error al inicializar SDL: %s", SDL_GetError());
@@ -96,45 +91,27 @@ SDL_AppResult SDL_AppIterate(void *appstate)
     {
         delta_time = 0.05f;
     }
-
-    // 2. Fase de Actualización (Update)
-    const bool *keys = SDL_GetKeyboardState(nullptr);
-    Vector2 input_dir{0.0f, 0.0f};
-   if (keys[SDL_SCANCODE_W] || keys[SDL_SCANCODE_UP]) input_dir.y -= 1.0f;
-   
-   if (keys[SDL_SCANCODE_S] || keys[SDL_SCANCODE_DOWN]) input_dir.y += 1.0f;
-   
-   if (keys[SDL_SCANCODE_A] || keys[SDL_SCANCODE_LEFT]) input_dir.x -= 1.0f;
-   
-   if (keys[SDL_SCANCODE_D] || keys[SDL_SCANCODE_RIGHT]) input_dir.x += 1.0f;
-   
-// Normalización: si el jugador se está moviendo, normalizamos el vector
-if (input_dir.length_squared() > 0.0f)
-{
-input_dir = input_dir.normalized();
-}
-// Desplazamiento
 constexpr float FIXED_TIMESTEP = 1.0f / 60.0f;
-app ->physics_accumulator += delta_time;
-
+app->physics_accumulator += delta_time;
 while (app->physics_accumulator >= FIXED_TIMESTEP)
 {
-PhysicsUpdate(app->player, input_dir, FIXED_TIMESTEP);
+for (auto &entity : app->entities)
+{
+entity->Update(FIXED_TIMESTEP);
+}
 app->physics_accumulator -= FIXED_TIMESTEP;
 }
 
+// Fase de Renderizado
+SDL_SetRenderDrawColor(app->renderer, 25, 25, 30, 255);
+SDL_RenderClear(app->renderer);
 
+for (auto &entity : app->entities)
+{
+entity->Render(app->renderer);
+}
 
-    // 3. Fase de Renderizado
-    SDL_SetRenderDrawColor(app->renderer, 30, 30, 35, 255);
-    SDL_RenderClear(app->renderer);
-
-    // Renderizado
-    SDL_SetRenderDrawColor(app->renderer, app->player.color.r, app->player.color.g, app->player.color.b, app->player.color.a);
-    
-    SDL_FRect player_rect{app->player.position.x, app->player.position.y,app->player.size.x, app->player.size.y};
-    SDL_RenderFillRect(app->renderer, &player_rect);
-    SDL_RenderPresent(app->renderer);
+SDL_RenderPresent(app->renderer);
     return SDL_APP_CONTINUE;
 }
 
@@ -149,13 +126,14 @@ SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event)
 
 void SDL_AppQuit(void *appstate, SDL_AppResult result)
 {
-    AppState *app = static_cast<AppState *>(appstate);
-    if (app)
-    {
-        SDL_DestroyRenderer(app->renderer);
-        SDL_DestroyWindow(app->window);
-    }
-    SDL_Quit();
+AppState *app = static_cast<AppState *>(appstate);
+if (app)
+{
+app->entities.clear();
+SDL_DestroyRenderer(app->renderer);
+SDL_DestroyWindow(app->window);
+}
+SDL_Quit();
 }
 
 void SDL_LogPlatformInfo()
