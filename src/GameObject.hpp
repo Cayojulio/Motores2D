@@ -82,6 +82,15 @@ for (auto &component : m_components)
 component->Update(dt);
 }
 }
+// Comprobador de colisiones 
+void OnCollision(GameObject *other)
+{
+if (!m_active) return;
+for (auto &component : m_components)
+{
+component->OnCollision(other);
+}
+}
 
 void Render(SDL_Renderer *renderer)
 {

@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named practica02_motor
+# Target rules for targets named practica04_motor
 
 # Build rule for target.
-practica02_motor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 practica02_motor
-.PHONY : practica02_motor
+practica04_motor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 practica04_motor
+.PHONY : practica04_motor
 
 # fast build rule for target.
-practica02_motor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica02_motor.dir/build.make CMakeFiles/practica02_motor.dir/build
-.PHONY : practica02_motor/fast
+practica04_motor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica04_motor.dir/build.make CMakeFiles/practica04_motor.dir/build
+.PHONY : practica04_motor/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica02_motor.dir/build.make CMakeFiles/practica02_motor.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica04_motor.dir/build.make CMakeFiles/practica04_motor.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +142,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica02_motor.dir/build.make CMakeFiles/practica02_motor.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica04_motor.dir/build.make CMakeFiles/practica04_motor.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,7 +150,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica02_motor.dir/build.make CMakeFiles/practica02_motor.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica04_motor.dir/build.make CMakeFiles/practica04_motor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... practica02_motor"
+	@echo "... practica04_motor"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

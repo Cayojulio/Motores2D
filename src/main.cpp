@@ -4,13 +4,15 @@
 #include <memory>
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
-
 #include "Vector2.hpp"
 #include "GameObject.hpp"
 #include "TransformComponent.hpp"
 #include "RectRenderComponent.hpp"
 #include "PlayerControllerComponent.hpp"
 #include "PatrolComponent.hpp"
+#include "ColliderComponent.hpp"
+#include "CollisionManager.hpp"
+#include "BallComponent.hpp"
 
 void SDL_LogPlatformInfo();
 
@@ -20,8 +22,9 @@ SDL_Renderer *renderer{nullptr};
 SDL_Window *window{nullptr};
 Uint64 last_ticks{0};
 float physics_accumulator{0.0f};
-// Colección de todas las entidades activas en el mundo
+bool debug_draw{false};
 std::vector<std::unique_ptr<GameObject>> entities;
+CollisionManager collisionManager{&entities};
 } appstate;
 
 
@@ -30,21 +33,28 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char **argv)
 {
     // Armamos del Jugador
 auto player = std::make_unique<GameObject>("Player");
-player->AddComponent<TransformComponent>(Vector2{440.0f, 240.0f},
-Vector2{1.0f, 1.0f});
+player->AddComponent<TransformComponent>(Vector2{440.0f, 240.0f});
 player->AddComponent<RectRenderComponent>(Vector2{60.0f, 60.0f},
 SDL_Color{60, 180, 100, 255});
-player->AddComponent<PlayerControllerComponent>(300.0f, true);
+player->AddComponent<PlayerControllerComponent>(300.0f, false);
+player->AddComponent<ColliderComponent>(Vector2{60.0f,60.0f});
 ::appstate.entities.push_back(std::move(player));
 
-// Entidad Obstáculo: reutiliza Transform y RectRender sin necesitar PlayerController
-auto obstacle = std::make_unique<GameObject>("Obstacle");
-obstacle->AddComponent<TransformComponent>(Vector2{150.0f, 120.0f},
-Vector2{1.5f, 1.5f});
-obstacle->AddComponent<RectRenderComponent>(Vector2{40.0f, 40.0f},
-SDL_Color{220, 70, 70, 255});
-obstacle->AddComponent<PatrolComponent>(120.0f, 100.0f);
+// Entidad Obstáculo
+auto obstacle = std::make_unique<GameObject>("obstacle");
+obstacle->AddComponent<TransformComponent>(Vector2{180.0f, 140.0f});
+obstacle->AddComponent<RectRenderComponent>(Vector2{80.0f, 80.0f}, SDL_Color{220, 70, 70, 255});
+obstacle->AddComponent<ColliderComponent>(Vector2{80.0f, 80.0f});
 ::appstate.entities.push_back(std::move(obstacle));
+
+// Pelota
+auto Pelota = std::make_unique<GameObject>("Pelota");
+Pelota->AddComponent<TransformComponent>(Vector2{468.0f, 80.0f});
+Pelota->AddComponent<RectRenderComponent>(Vector2{24.0f, 24.0f},
+SDL_Color{220, 210, 60, 255});
+Pelota->AddComponent<ColliderComponent>(Vector2{24.0f,24.0f});
+Pelota->AddComponent<BallComponent>();
+::appstate.entities.push_back(std::move(Pelota));
 
 
     if (!SDL_Init(SDL_INIT_VIDEO))
@@ -81,7 +91,7 @@ SDL_AppResult SDL_AppIterate(void *appstate)
 {
     AppState *app = static_cast<AppState *>(appstate);
 
-    // 1. Medición de Delta Time en segundos
+
     Uint64 current_ticks = SDL_GetTicks();
     float delta_time = static_cast<float>(current_ticks - app->last_ticks) / 1000.0f;
     app->last_ticks = current_ticks;
@@ -96,11 +106,13 @@ app->physics_accumulator += delta_time;
 while (app->physics_accumulator >= FIXED_TIMESTEP)
 {
 for (auto &entity : app->entities)
-{
-entity->Update(FIXED_TIMESTEP);
+        {
+            entity->Update(FIXED_TIMESTEP);
+        }
+        app->collisionManager.CheckCollisions();
+        app->physics_accumulator -= FIXED_TIMESTEP;
 }
-app->physics_accumulator -= FIXED_TIMESTEP;
-}
+
 
 // Fase de Renderizado
 SDL_SetRenderDrawColor(app->renderer, 25, 25, 30, 255);
@@ -111,12 +123,35 @@ for (auto &entity : app->entities)
 entity->Render(app->renderer);
 }
 
+if (app->debug_draw)
+    {
+        for (auto &entity : app->entities)
+        {
+            if (auto *col = entity->GetComponent<ColliderComponent>())
+            {
+                col->RenderDebug(app->renderer);
+            }
+        }
+    }
+
+
 SDL_RenderPresent(app->renderer);
     return SDL_APP_CONTINUE;
 }
 
 SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event)
 {
+ AppState *app = static_cast<AppState *>(appstate);
+if (event->type == SDL_EVENT_KEY_DOWN && event->key.scancode ==
+SDL_SCANCODE_F1)
+{
+if (app)
+{
+app->debug_draw = !app->debug_draw;
+SDL_Log("Debug Draw: %s", app->debug_draw ? "ACTIVADO" :
+"DESACTIVADO");
+}
+}
     if (event->type == SDL_EVENT_QUIT)
     {
         return SDL_APP_SUCCESS;

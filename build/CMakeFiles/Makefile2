@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/planti
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/practica02_motor.dir/all
+all: CMakeFiles/practica04_motor.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/practica02_motor.dir/codegen
+codegen: CMakeFiles/practica04_motor.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/practica02_motor.dir/clean
+clean: CMakeFiles/practica04_motor.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/practica02_motor.dir
+# Target rules for target CMakeFiles/practica04_motor.dir
 
 # All Build rule for target.
-CMakeFiles/practica02_motor.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica02_motor.dir/build.make CMakeFiles/practica02_motor.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica02_motor.dir/build.make CMakeFiles/practica02_motor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=1,2 "Built target practica02_motor"
-.PHONY : CMakeFiles/practica02_motor.dir/all
+CMakeFiles/practica04_motor.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica04_motor.dir/build.make CMakeFiles/practica04_motor.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica04_motor.dir/build.make CMakeFiles/practica04_motor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=1,2 "Built target practica04_motor"
+.PHONY : CMakeFiles/practica04_motor.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/practica02_motor.dir/rule: cmake_check_build_system
+CMakeFiles/practica04_motor.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/practica02_motor.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/practica04_motor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" 0
-.PHONY : CMakeFiles/practica02_motor.dir/rule
+.PHONY : CMakeFiles/practica04_motor.dir/rule
 
 # Convenience name for target.
-practica02_motor: CMakeFiles/practica02_motor.dir/rule
-.PHONY : practica02_motor
+practica04_motor: CMakeFiles/practica04_motor.dir/rule
+.PHONY : practica04_motor
 
 # codegen rule for target.
-CMakeFiles/practica02_motor.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica02_motor.dir/build.make CMakeFiles/practica02_motor.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=1,2 "Finished codegen for target practica02_motor"
-.PHONY : CMakeFiles/practica02_motor.dir/codegen
+CMakeFiles/practica04_motor.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica04_motor.dir/build.make CMakeFiles/practica04_motor.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=1,2 "Finished codegen for target practica04_motor"
+.PHONY : CMakeFiles/practica04_motor.dir/codegen
 
 # clean rule for target.
-CMakeFiles/practica02_motor.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica02_motor.dir/build.make CMakeFiles/practica02_motor.dir/clean
-.PHONY : CMakeFiles/practica02_motor.dir/clean
+CMakeFiles/practica04_motor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica04_motor.dir/build.make CMakeFiles/practica04_motor.dir/clean
+.PHONY : CMakeFiles/practica04_motor.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

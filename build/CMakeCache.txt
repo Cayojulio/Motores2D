@@ -131,7 +131,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=practica02_motor
+CMAKE_PROJECT_NAME:STATIC=practica04_motor
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -662,6 +662,15 @@ practica02_motor_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 practica02_motor_SOURCE_DIR:STATIC=/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla
+
+//Value Computed by CMake
+practica04_motor_BINARY_DIR:STATIC=/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build
+
+//Value Computed by CMake
+practica04_motor_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+practica04_motor_SOURCE_DIR:STATIC=/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla
 
 
 ########################

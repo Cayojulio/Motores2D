@@ -64,5 +64,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/practica02_motor.dir/DependInfo.cmake"
+  "CMakeFiles/practica04_motor.dir/DependInfo.cmake"
   )

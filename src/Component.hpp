@@ -12,7 +12,7 @@ public:
 GameObject *owner{nullptr};
 // Destructor virtual
 virtual ~Component() = default;
-
+virtual void OnCollision(GameObject *other) {}
 // Métodos virtuales del ciclo de vida
 virtual void Init() {}
 virtual void Update(float dt) {}
