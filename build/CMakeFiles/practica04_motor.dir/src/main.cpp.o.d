@@ -281,4 +281,10 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.o: \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PatrolComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/ColliderComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/CollisionManager.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/BallComponent.hpp
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/BallComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/SceneManager.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Scene.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/TitleScene.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameScene.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PauseScene.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameOverScene.hpp

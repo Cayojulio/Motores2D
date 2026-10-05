@@ -8,9 +8,15 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.o
  /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/CollisionManager.hpp
  /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Component.hpp
  /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/GameObject.hpp
+ /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/GameOverScene.hpp
+ /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/GameScene.hpp
  /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/PatrolComponent.hpp
+ /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/PauseScene.hpp
  /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/PlayerControllerComponent.hpp
  /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/RectRenderComponent.hpp
+ /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Scene.hpp
+ /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/SceneManager.hpp
+ /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/TitleScene.hpp
  /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/TransformComponent.hpp
  /home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Vector2.hpp
  /usr/include/SDL3/SDL.h

@@ -7,9 +7,15 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.o: /home/cayo/Downloads/Motores\ 2D
   /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/CollisionManager.hpp \
   /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Component.hpp \
   /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameObject.hpp \
+  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameOverScene.hpp \
+  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameScene.hpp \
   /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PatrolComponent.hpp \
+  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PauseScene.hpp \
   /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PlayerControllerComponent.hpp \
   /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/RectRenderComponent.hpp \
+  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Scene.hpp \
+  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/SceneManager.hpp \
+  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/TitleScene.hpp \
   /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/TransformComponent.hpp \
   /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Vector2.hpp \
   /usr/include/SDL3/SDL.h \
@@ -737,7 +743,11 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/c++/15/bits/ostream_insert.h:
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -749,23 +759,7 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/ctype.h:
 
-/usr/lib/i386-linux-gnu/libwayland-cursor.so.0:
-
-/usr/include/c++/15/bits/memoryfwd.h:
-
-/usr/lib/x86_64-linux-gnu/libm.so:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/c++/15/tr1/beta_function.tcc:
-
-/usr/include/c++/15/bits/iterator_concepts.h:
-
 /usr/include/c++/15/bits/predefined_ops.h:
-
-/usr/include/c++/15/initializer_list:
-
-/usr/include/c++/15/bits/ostream.h:
 
 /usr/include/c++/15/bits/basic_ios.tcc:
 
@@ -802,10 +796,6 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 /usr/include/syscall.h:
 
 /usr/include/asm-generic/errno-base.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
@@ -863,35 +853,35 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/SDL3/SDL_render.h:
 
-/usr/include/pthread.h:
+/usr/include/c++/15/bits/allocated_ptr.h:
 
-/usr/lib/i386-linux-gnu/libdecor-0.so.0:
+/usr/include/c++/15/bits/vector.tcc:
 
-/usr/include/c++/15/bits/algorithmfwd.h:
+/usr/lib/i386-linux-gnu/libsystemd.so.0:
 
-/usr/include/c++/15/bits/nested_exception.h:
+/usr/include/SDL3/SDL_scancode.h:
 
-/usr/include/linux/sched/types.h:
+/usr/lib/x86_64-linux-gnu/libm.so.6:
 
-/usr/include/SDL3/SDL_dlopennote.h:
+/usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/main.cpp:
+/usr/include/c++/15/bits/basic_ios.h:
 
-/usr/include/wctype.h:
+/usr/include/c++/15/tr1/modified_bessel_func.tcc:
 
-/usr/include/sched.h:
+/usr/include/unistd.h:
+
+/usr/include/SDL3/SDL_platform_defines.h:
+
+/usr/include/c++/15/bits/char_traits.h:
 
 /usr/include/c++/15/bits/max_size_type.h:
 
 /usr/include/SDL3/SDL_cpuinfo.h:
 
-/usr/include/c++/15/bits/locale_classes.tcc:
+/usr/include/pthread.h:
 
-/usr/include/SDL3/SDL_events.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/15/stdexcept:
+/usr/include/SDL3/SDL_audio.h:
 
 /usr/include/SDL3/SDL_assert.h:
 
@@ -899,35 +889,11 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/c++/15/tr1/ell_integral.tcc:
 
-/usr/include/SDL3/SDL_time.h:
+/usr/include/c++/15/initializer_list:
 
-/usr/include/c++/15/tuple:
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/TitleScene.hpp:
 
-/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameObject.hpp:
-
-/usr/include/c++/15/string:
-
-/usr/lib/x86_64-linux-gnu/libSDL3.so.0.4.2:
-
-/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PatrolComponent.hpp:
-
-/usr/include/SDL3/SDL_blendmode.h:
-
-/usr/include/c++/15/bits/char_traits.h:
-
-/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/CollisionManager.hpp:
-
-/usr/include/SDL3/SDL_platform.h:
-
-/usr/include/SDL3/SDL_audio.h:
-
-/usr/lib/i386-linux-gnu/libwayland-client.so.0:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/c++/15/numbers:
-
-/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/RectRenderComponent.hpp:
+/usr/include/c++/15/system_error:
 
 /usr/include/SDL3/SDL_close_code.h:
 
@@ -945,25 +911,55 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/linux/close_range.h:
 
+/usr/lib/x86_64-linux-gnu/libm.so:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/lib/i386-linux-gnu/libwayland-cursor.so.0:
+
+/usr/include/c++/15/bits/memoryfwd.h:
+
+/usr/include/c++/15/tr1/beta_function.tcc:
+
 /usr/include/SDL3/SDL_main_impl.h:
+
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/main.cpp:
+
+/usr/include/c++/15/bits/nested_exception.h:
+
+/usr/include/linux/sched/types.h:
+
+/usr/include/SDL3/SDL_dlopennote.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/SDL3/SDL_clipboard.h:
 
 /usr/include/wchar.h:
 
 /usr/include/SDL3/SDL_keycode.h:
 
-/usr/include/SDL3/SDL_thread.h:
+/usr/lib/i386-linux-gnu/libwayland-client.so.0:
 
-/usr/include/c++/15/bits/postypes.h:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+/usr/include/c++/15/numbers:
 
-/usr/include/SDL3/SDL_asyncio.h:
+/usr/include/c++/15/stdexcept:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
+/usr/include/SDL3/SDL_platform.h:
 
-/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h:
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/CollisionManager.hpp:
 
-/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Vector2.hpp:
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/SceneManager.hpp:
+
+/usr/include/c++/15/bits/ostream.h:
 
 /usr/include/c++/15/bit:
 
@@ -973,15 +969,45 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 
 /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/TransformComponent.hpp:
 
-/usr/include/SDL3/SDL_clipboard.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
 /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h:
 
 /usr/include/c++/15/bits/move.h:
 
 /usr/include/SDL3/SDL_messagebox.h:
+
+/usr/include/SDL3/SDL_time.h:
+
+/usr/include/c++/15/tuple:
+
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameObject.hpp:
+
+/usr/include/c++/15/string:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h:
+
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Vector2.hpp:
+
+/usr/include/SDL3/SDL_asyncio.h:
+
+/usr/include/linux/limits.h:
+
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PlayerControllerComponent.hpp:
+
+/usr/lib/i386-linux-gnu/libdecor-0.so.0:
+
+/usr/include/c++/15/bits/algorithmfwd.h:
+
+/usr/include/c++/15/bits/iterator_concepts.h:
+
+/usr/include/x86_64-linux-gnu/asm/unistd.h:
+
+/usr/include/c++/15/tr1/bessel_function.tcc:
+
+/usr/include/SDL3/SDL_joystick.h:
+
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/RectRenderComponent.hpp:
 
 /usr/include/c++/15/bits/functional_hash.h:
 
@@ -997,17 +1023,39 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/string.h:
 
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameOverScene.hpp:
+
+/usr/include/c++/15/bits/ranges_cmp.h:
+
+/usr/include/c++/15/bits/locale_classes.tcc:
+
+/usr/include/SDL3/SDL_events.h:
+
+/usr/lib/x86_64-linux-gnu/libSDL3.so.0.4.2:
+
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PatrolComponent.hpp:
+
+/usr/include/SDL3/SDL_blendmode.h:
+
+CMakeFiles/practica04_motor.dir/src/main.cpp.o:
+
+/usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h:
+
+/usr/include/SDL3/SDL_power.h:
+
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Component.hpp:
+
+/usr/include/c++/15/pstl/glue_memory_defs.h:
+
 /usr/include/SDL3/SDL_properties.h:
 
 /usr/include/SDL3/SDL_gpu.h:
 
-/usr/include/c++/15/cstddef:
-
 /usr/include/SDL3/SDL_storage.h:
 
-/usr/include/errno.h:
+/usr/include/c++/15/cstddef:
 
-/usr/include/SDL3/SDL_joystick.h:
+/usr/include/errno.h:
 
 /usr/include/c++/15/bits/localefwd.h:
 
@@ -1043,9 +1091,15 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameScene.hpp:
+
 /usr/include/c++/15/bits/functexcept.h:
 
 /usr/include/c++/15/bits/stl_vector.h:
+
+/usr/include/x86_64-linux-gnu/asm/types.h:
+
+/usr/include/c++/15/cwctype:
 
 /usr/include/SDL3/SDL_misc.h:
 
@@ -1068,6 +1122,10 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 /usr/include/c++/15/cstdlib:
 
 /usr/include/SDL3/SDL_pen.h:
+
+/usr/lib/x86_64-linux-gnu/Scrt1.o:
+
+/usr/include/c++/15/tr1/hypergeometric.tcc:
 
 /usr/include/SDL3/SDL_init.h:
 
@@ -1093,47 +1151,17 @@ practica04_motor: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/c++/15/bits/uses_allocator.h:
 
-/usr/include/SDL3/SDL_platform_defines.h:
+/usr/include/c++/15/bits/ostream_insert.h:
 
-/usr/lib/x86_64-linux-gnu/libm.so.6:
+/usr/include/SDL3/SDL_thread.h:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/c++/15/bits/basic_ios.h:
-
-/usr/include/c++/15/tr1/modified_bessel_func.tcc:
-
-/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PlayerControllerComponent.hpp:
-
-/usr/include/linux/limits.h:
-
-CMakeFiles/practica04_motor.dir/src/main.cpp.o:
-
-/usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h:
-
-/usr/include/c++/15/pstl/glue_memory_defs.h:
-
-/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Component.hpp:
-
-/usr/include/SDL3/SDL_power.h:
-
-/usr/include/unistd.h:
-
-/usr/include/c++/15/bits/allocated_ptr.h:
-
-/usr/include/c++/15/bits/vector.tcc:
-
-/usr/lib/i386-linux-gnu/libsystemd.so.0:
-
-/usr/include/SDL3/SDL_scancode.h:
+/usr/include/c++/15/bits/postypes.h:
 
 /usr/lib/i386-linux-gnu/libapparmor.so.1:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/15/bits/ranges_algo.h:
-
-/usr/include/c++/15/bits/ranges_cmp.h:
 
 /usr/include/c++/15/bits/ranges_uninitialized.h:
 
@@ -1192,6 +1220,8 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.o:
 /usr/include/c++/15/bits/stl_bvector.h:
 
 /usr/lib/i386-linux-gnu/libXfixes.so.3:
+
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PauseScene.hpp:
 
 /usr/include/c++/15/bits/stl_iterator.h:
 
@@ -1263,15 +1293,15 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.o:
 
 /usr/include/c++/15/cstdio:
 
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/c++/15/debug/assertions.h:
+
 /usr/include/c++/15/debug/debug.h:
 
 /usr/include/c++/15/exception:
 
 /usr/include/c++/15/ext/aligned_buffer.h:
-
-/usr/include/c++/15/cwctype:
-
-/usr/include/x86_64-linux-gnu/asm/types.h:
 
 /usr/include/c++/15/ext/alloc_traits.h:
 
@@ -1299,19 +1329,11 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
+/home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Scene.hpp:
+
 /usr/include/c++/15/string_view:
 
-/usr/include/c++/15/system_error:
-
-/usr/include/x86_64-linux-gnu/asm/unistd.h:
-
-/usr/include/c++/15/tr1/bessel_function.tcc:
-
 /usr/include/c++/15/tr1/gamma.tcc:
-
-/usr/lib/x86_64-linux-gnu/Scrt1.o:
-
-/usr/include/c++/15/tr1/hypergeometric.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
@@ -1350,10 +1372,6 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.o:
 /usr/include/linux/stddef.h:
 
 /usr/include/locale.h:
-
-/usr/include/c++/15/debug/assertions.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 

@@ -13,6 +13,14 @@
 #include "ColliderComponent.hpp"
 #include "CollisionManager.hpp"
 #include "BallComponent.hpp"
+#include "SceneManager.hpp"
+#include "TitleScene.hpp"
+#include "Scene.hpp"
+#include "SceneManager.hpp"
+
+#include "TitleScene.hpp"
+#include "GameScene.hpp"
+#include "GameOverScene.hpp"
 
 void SDL_LogPlatformInfo();
 
@@ -21,43 +29,15 @@ struct AppState
 SDL_Renderer *renderer{nullptr};
 SDL_Window *window{nullptr};
 Uint64 last_ticks{0};
-float physics_accumulator{0.0f};
-bool debug_draw{false};
-std::vector<std::unique_ptr<GameObject>> entities;
-CollisionManager collisionManager{&entities};
+// El SceneManager ahora gobierna el estado completo de la aplicación
+SceneManager sceneManager;
 } appstate;
-
-
 
 SDL_AppResult SDL_AppInit(void **appstate, int argc, char **argv)
 {
-    // Armamos del Jugador
-auto player = std::make_unique<GameObject>("Player");
-player->AddComponent<TransformComponent>(Vector2{440.0f, 240.0f});
-player->AddComponent<RectRenderComponent>(Vector2{60.0f, 60.0f},
-SDL_Color{60, 180, 100, 255});
-player->AddComponent<PlayerControllerComponent>(300.0f, false);
-player->AddComponent<ColliderComponent>(Vector2{60.0f,60.0f});
-::appstate.entities.push_back(std::move(player));
-
-// Entidad Obstáculo
-auto obstacle = std::make_unique<GameObject>("obstacle");
-obstacle->AddComponent<TransformComponent>(Vector2{180.0f, 140.0f});
-obstacle->AddComponent<RectRenderComponent>(Vector2{80.0f, 80.0f}, SDL_Color{220, 70, 70, 255});
-obstacle->AddComponent<ColliderComponent>(Vector2{80.0f, 80.0f});
-::appstate.entities.push_back(std::move(obstacle));
-
-// Pelota
-auto Pelota = std::make_unique<GameObject>("Pelota");
-Pelota->AddComponent<TransformComponent>(Vector2{468.0f, 80.0f});
-Pelota->AddComponent<RectRenderComponent>(Vector2{24.0f, 24.0f},
-SDL_Color{220, 210, 60, 255});
-Pelota->AddComponent<ColliderComponent>(Vector2{24.0f,24.0f});
-Pelota->AddComponent<BallComponent>();
-::appstate.entities.push_back(std::move(Pelota));
-
-
-    if (!SDL_Init(SDL_INIT_VIDEO))
+*appstate = &::appstate;
+    // 1. Inicializar sub-sistemas de SDL3
+        if (!SDL_Init(SDL_INIT_VIDEO))
     {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Error al inicializar SDL: %s", SDL_GetError());
         return SDL_APP_FAILURE;
@@ -82,8 +62,9 @@ Pelota->AddComponent<BallComponent>();
     ::appstate.window = window;
     ::appstate.renderer = renderer;
     ::appstate.last_ticks = SDL_GetTicks();
+    ::appstate.sceneManager.ChangeScene(std::make_unique<TitleScene>(&::appstate.sceneManager));
+    ::appstate.sceneManager.ProcessPendingChanges();
 
-    *appstate = &::appstate;
     return SDL_APP_CONTINUE;
 }
 
@@ -91,71 +72,46 @@ SDL_AppResult SDL_AppIterate(void *appstate)
 {
     AppState *app = static_cast<AppState *>(appstate);
 
-
+    // Cálculo de Delta Time
     Uint64 current_ticks = SDL_GetTicks();
     float delta_time = static_cast<float>(current_ticks - app->last_ticks) / 1000.0f;
     app->last_ticks = current_ticks;
 
-    // Evitar saltos de tiempo excesivos si el sistema operativo pausa el proceso
+    // Evitar salto de tiempo excesivo (ej. al arrastrar la ventana)
     if (delta_time > 0.05f)
     {
         delta_time = 0.05f;
     }
-constexpr float FIXED_TIMESTEP = 1.0f / 60.0f;
-app->physics_accumulator += delta_time;
-while (app->physics_accumulator >= FIXED_TIMESTEP)
-{
-for (auto &entity : app->entities)
-        {
-            entity->Update(FIXED_TIMESTEP);
-        }
-        app->collisionManager.CheckCollisions();
-        app->physics_accumulator -= FIXED_TIMESTEP;
-}
 
+    // Actualización y cambio de escenas
+    app->sceneManager.ProcessPendingChanges();
+    app->sceneManager.Update(delta_time);
 
-// Fase de Renderizado
-SDL_SetRenderDrawColor(app->renderer, 25, 25, 30, 255);
-SDL_RenderClear(app->renderer);
+    // Renderizado
+    SDL_SetRenderDrawColor(app->renderer, 0, 0, 0, 255); // Fondo negro por defecto
+    SDL_RenderClear(app->renderer);
 
-for (auto &entity : app->entities)
-{
-entity->Render(app->renderer);
-}
+    app->sceneManager.Render(app->renderer);
 
-if (app->debug_draw)
-    {
-        for (auto &entity : app->entities)
-        {
-            if (auto *col = entity->GetComponent<ColliderComponent>())
-            {
-                col->RenderDebug(app->renderer);
-            }
-        }
-    }
+    SDL_RenderPresent(app->renderer);
 
-
-SDL_RenderPresent(app->renderer);
     return SDL_APP_CONTINUE;
 }
 
 SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event)
 {
- AppState *app = static_cast<AppState *>(appstate);
-if (event->type == SDL_EVENT_KEY_DOWN && event->key.scancode ==
-SDL_SCANCODE_F1)
-{
-if (app)
-{
-app->debug_draw = !app->debug_draw;
-SDL_Log("Debug Draw: %s", app->debug_draw ? "ACTIVADO" :
-"DESACTIVADO");
-}
-}
+    AppState *app = static_cast<AppState *>(appstate);
+
     if (event->type == SDL_EVENT_QUIT)
     {
-        return SDL_APP_SUCCESS;
+        return SDL_APP_SUCCESS; // Permite cerrar la aplicación limpiamente
     }
+
+    if (app && app->sceneManager.HasScenes())
+    {
+        app->sceneManager.HandleEvent(*event);
+    }
+
     return SDL_APP_CONTINUE;
 }
 
@@ -164,7 +120,6 @@ void SDL_AppQuit(void *appstate, SDL_AppResult result)
 AppState *app = static_cast<AppState *>(appstate);
 if (app)
 {
-app->entities.clear();
 SDL_DestroyRenderer(app->renderer);
 SDL_DestroyWindow(app->window);
 }

@@ -23,6 +23,12 @@ src/PlayerControllerComponent.hpp
 src/ColliderComponent.hpp
 src/CollisionManager.hpp
 src/BallComponent.hpp
+src/Scene.hpp
+src/PauseScene.hpp
+src/SceneManager.hpp
+src/GameOverScene
+src/GameScene
+src/TitleScene
 )
 target_include_directories(${PROJECT_NAME} PRIVATE src)
 target_link_libraries(${PROJECT_NAME} PRIVATE ${SDL3_TARGET})

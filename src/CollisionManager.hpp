@@ -10,10 +10,15 @@ private:
  
     const std::vector<std::unique_ptr<GameObject>>* m_entities{nullptr};
 public:
+CollisionManager() = default;
     explicit CollisionManager(std::vector<std::unique_ptr<GameObject>>*entities)
         : m_entities(entities) {}
-
-
+        
+        
+        
+    auto SetEntities(std::vector<std::unique_ptr<GameObject>>*entities) {
+        m_entities = entities;
+    }
 
 
     auto CheckAABB(const SDL_FRect &a, const SDL_FRect &b) -> bool
@@ -77,4 +82,5 @@ public:
             }
         }
     }
+    
 };
