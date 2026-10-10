@@ -40,7 +40,7 @@ void GameScene::Init()
     player->AddComponent<RectRenderComponent>(Vector2{15.0f, 50.0f}, SDL_Color{255, 255, 255, 255});
     player->AddComponent<PlayerControllerComponent>(500.0f, false);
     player->AddComponent<ColliderComponent>(Vector2{15.0f, 50.0f});
-    auto* vidas1 = player->AddComponent<VidasComponent>(7, LadoCampo::Izquierda);
+    auto* vidas1 = player->AddComponent<VidasComponent>(5, LadoCampo::Izquierda);
     vidas1->BallTransform(ballTransform);
     vidas1->PosicionarBarras(Vector2{30.0f, 20.0f});
     m_player1 = player.get();
@@ -54,7 +54,7 @@ void GameScene::Init()
     player2->AddComponent<ColliderComponent>(Vector2{15.0f, 50.0f});
     auto* controller2 = player2->AddComponent<PlayerControllerComponent2>(500.0f, false, true);
     controller2->BallTransform(ballTransform);
-    auto* vidas2 = player2->AddComponent<VidasComponent>(7, LadoCampo::Derecha);
+    auto* vidas2 = player2->AddComponent<VidasComponent>(5, LadoCampo::Derecha);
     vidas2->BallTransform(ballTransform);
     vidas2->PosicionarBarras(Vector2{800.0f, 20.0f});
     m_player2 = player2.get();
