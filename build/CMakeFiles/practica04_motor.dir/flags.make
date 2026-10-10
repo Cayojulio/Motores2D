@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src"
+CXX_INCLUDES = -I"/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/include" -I"/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src"
 
-CXX_FLAGS = -std=gnu++20
+CXX_FLAGS = -g -std=gnu++20
 

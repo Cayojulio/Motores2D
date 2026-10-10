@@ -86,19 +86,291 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/main.cpp" -o CMakeFiles/practica04_motor.dir/src/main.cpp.s
 
+CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Math/Vector2.cpp
+CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Math/Vector2.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Math/Vector2.cpp" > CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Math/Vector2.cpp" -o CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/GameObject.cpp
+CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/GameObject.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/GameObject.cpp" > CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/GameObject.cpp" -o CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/TransformComponent.cpp
+CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/TransformComponent.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/TransformComponent.cpp" > CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/TransformComponent.cpp" -o CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/RectRenderComponent.cpp
+CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/RectRenderComponent.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/RectRenderComponent.cpp" > CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/RectRenderComponent.cpp" -o CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/Scene.cpp
+CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Scene.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Scene.cpp" > CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Scene.cpp" -o CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/SceneManager.cpp
+CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/SceneManager.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/SceneManager.cpp" > CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/SceneManager.cpp" -o CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Physics/ColliderComponent.cpp
+CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/ColliderComponent.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/ColliderComponent.cpp" > CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/ColliderComponent.cpp" -o CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Physics/CollisionManager.cpp
+CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/CollisionManager.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/CollisionManager.cpp" > CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/CollisionManager.cpp" -o CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Physics/PatrolComponent.cpp
+CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/PatrolComponent.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/PatrolComponent.cpp" > CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/PatrolComponent.cpp" -o CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Physics/BallComponent.cpp
+CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/BallComponent.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/BallComponent.cpp" > CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Physics/BallComponent.cpp" -o CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Game/GameOverScene.cpp
+CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/GameOverScene.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/GameOverScene.cpp" > CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/GameOverScene.cpp" -o CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Game/TitleScene.cpp
+CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/TitleScene.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/TitleScene.cpp" > CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/TitleScene.cpp" -o CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Game/PauseScene.cpp
+CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/PauseScene.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/PauseScene.cpp" > CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/PauseScene.cpp" -o CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Game/GameScene.cpp
+CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/GameScene.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/GameScene.cpp" > CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Game/GameScene.cpp" -o CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/PlayerControllerComponent2.cpp
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/PlayerControllerComponent2.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/PlayerControllerComponent2.cpp" > CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/PlayerControllerComponent2.cpp" -o CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/PlayerControllerComponent.cpp
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/PlayerControllerComponent.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/PlayerControllerComponent.cpp" > CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/PlayerControllerComponent.cpp" -o CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.s
+
+CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o: CMakeFiles/practica04_motor.dir/flags.make
+CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/VidasComponent.cpp
+CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o: CMakeFiles/practica04_motor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o -MF CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o.d -o CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/VidasComponent.cpp"
+
+CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/VidasComponent.cpp" > CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.i
+
+CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/VidasComponent.cpp" -o CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.s
+
 # Object files for target practica04_motor
 practica04_motor_OBJECTS = \
-"CMakeFiles/practica04_motor.dir/src/main.cpp.o"
+"CMakeFiles/practica04_motor.dir/src/main.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o" \
+"CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o"
 
 # External object files for target practica04_motor
 practica04_motor_EXTERNAL_OBJECTS =
 
 practica04_motor: CMakeFiles/practica04_motor.dir/src/main.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o
+practica04_motor: CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o
 practica04_motor: CMakeFiles/practica04_motor.dir/build.make
 practica04_motor: CMakeFiles/practica04_motor.dir/compiler_depend.ts
 practica04_motor: /usr/lib/x86_64-linux-gnu/libSDL3.so.0.4.2
 practica04_motor: CMakeFiles/practica04_motor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable practica04_motor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable practica04_motor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/practica04_motor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

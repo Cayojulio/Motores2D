@@ -241,7 +241,7 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.o: \
  /usr/include/SDL3/SDL_tray.h /usr/include/SDL3/SDL_version.h \
  /usr/include/SDL3/SDL_oldnames.h /usr/include/SDL3/SDL_main.h \
  /usr/include/SDL3/SDL_main_impl.h \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Vector2.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Math/Vector2.hpp \
  /usr/include/c++/15/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -272,19 +272,18 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/uniform_int_dist.h \
  /usr/include/c++/15/bits/ranges_algo.h \
  /usr/include/c++/15/pstl/glue_algorithm_defs.h \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameObject.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/GameObject.hpp \
  /usr/include/c++/15/utility /usr/include/c++/15/bits/stl_relops.h \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Component.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/TransformComponent.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/RectRenderComponent.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PlayerControllerComponent.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PatrolComponent.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/ColliderComponent.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/CollisionManager.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/BallComponent.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/SceneManager.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Scene.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/TitleScene.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameScene.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/PauseScene.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/GameOverScene.hpp
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Component.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/TransformComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/RectRenderComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/PlayerControllerComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/PatrolComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/ColliderComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/CollisionManager.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/BallComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/SceneManager.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Game/TitleScene.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Scene.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Game/GameScene.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Game/GameOverScene.hpp

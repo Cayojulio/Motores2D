@@ -3,6 +3,23 @@ practica04_motor: \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   CMakeFiles/practica04_motor.dir/src/main.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o \
+  CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o \
   /usr/lib/x86_64-linux-gnu/libSDL3.so.0.4.2 \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -114,6 +131,40 @@ practica04_motor: \
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
 CMakeFiles/practica04_motor.dir/src/main.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Math/Vector2.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Engine/GameObject.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Engine/TransformComponent.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Engine/RectRenderComponent.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Engine/Scene.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Engine/SceneManager.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Physics/ColliderComponent.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Physics/CollisionManager.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Physics/BallComponent.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Game/GameOverScene.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Game/TitleScene.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Game/PauseScene.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent2.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Engine/PlayerControllerComponent.cpp.o:
+
+CMakeFiles/practica04_motor.dir/src/Engine/VidasComponent.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libSDL3.so.0.4.2:
 

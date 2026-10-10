@@ -4,23 +4,23 @@
 #include <memory>
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
-#include "Vector2.hpp"
-#include "GameObject.hpp"
-#include "TransformComponent.hpp"
-#include "RectRenderComponent.hpp"
-#include "PlayerControllerComponent.hpp"
-#include "PatrolComponent.hpp"
-#include "ColliderComponent.hpp"
-#include "CollisionManager.hpp"
-#include "BallComponent.hpp"
-#include "SceneManager.hpp"
-#include "TitleScene.hpp"
-#include "Scene.hpp"
-#include "SceneManager.hpp"
+#include "Math/Vector2.hpp"
+#include "Engine/GameObject.hpp"
+#include "Engine/TransformComponent.hpp"
+#include "Engine/RectRenderComponent.hpp"
+#include "Engine/PlayerControllerComponent.hpp"
+#include "Physics/PatrolComponent.hpp"
+#include "Physics/ColliderComponent.hpp"
+#include "Physics/CollisionManager.hpp"
+#include "Physics/BallComponent.hpp"
+#include "Engine/SceneManager.hpp"
+#include "Game/TitleScene.hpp"
+#include "Engine/Scene.hpp"
+#include "Engine/SceneManager.hpp"
 
-#include "TitleScene.hpp"
-#include "GameScene.hpp"
-#include "GameOverScene.hpp"
+#include "Game/TitleScene.hpp"
+#include "Game/GameScene.hpp"
+#include "Game/GameOverScene.hpp"
 
 void SDL_LogPlatformInfo();
 
@@ -82,10 +82,11 @@ SDL_AppResult SDL_AppIterate(void *appstate)
     {
         delta_time = 0.05f;
     }
-
+    constexpr float FIXED_TIMESTEP = 1.0f / 60.0f;
     // Actualización y cambio de escenas
     app->sceneManager.ProcessPendingChanges();
     app->sceneManager.Update(delta_time);
+    app->sceneManager.FixedUpdate(FIXED_TIMESTEP);
 
     // Renderizado
     SDL_SetRenderDrawColor(app->renderer, 0, 0, 0, 255); // Fondo negro por defecto
