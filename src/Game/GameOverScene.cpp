@@ -1,13 +1,40 @@
 #include "Game/GameOverScene.hpp"
 #include <memory>
-#include "Engine/SceneManager.hpp"
-#include "Game/GameScene.hpp"
 #include "Game/TitleScene.hpp"
-
+#include "Engine/ResourceManager.hpp"
+#include "Engine/SceneManager.hpp"
+#include "Engine/Components/TransformComponent.hpp"
+#include "Engine/Components/BotonComponent.hpp"
+#include "Game/GameScene.hpp"
 GameOverScene::GameOverScene(SceneManager *manager)
     : Scene(manager, "GameOverScene")
 {
 }
+void GameOverScene::Init()
+{
+ResourceManager* rm = GetResourceManager();
+    if (!rm)  return;
+    
+    SDL_Texture* Game = rm->GetTexture("assets/Game.jpeg");
+
+
+constexpr float IMG_WIDTH  = 300.0f;
+constexpr float IMG_HEIGHT = 80.0f;
+float posX = (960.0f - IMG_WIDTH) / 2.0f;
+float posY = (540.0f - IMG_HEIGHT) / 2.0f;
+
+auto gameOverObj = std::make_unique<GameObject>("GameOverImage");
+auto* transform = gameOverObj->AddComponent<TransformComponent>(Vector2{posX, posY});
+auto* sprite = gameOverObj->AddComponent<SpriteComponent>(Game);
+
+if (sprite)
+{
+    sprite->Size(IMG_WIDTH, IMG_HEIGHT); 
+}
+
+m_entities.push_back(std::move(gameOverObj));
+ 
+    }
 
 void GameOverScene::HandleEvent(const SDL_Event &event)
 {
@@ -34,37 +61,5 @@ void GameOverScene::HandleEvent(const SDL_Event &event)
 void GameOverScene::Render(SDL_Renderer *renderer)
 {
     if (!renderer) return;
-
-    constexpr float SCREEN_WIDTH  = 960.0f;
-    constexpr float SCREEN_HEIGHT = 540.0f;
-
-    SDL_SetRenderDrawColor(renderer, 45, 15, 20, 255);
-    SDL_RenderClear(renderer);
-
-    constexpr float PANEL_WIDTH  = 400.0f;
-    constexpr float PANEL_HEIGHT = 200.0f;
-
-    float panelX = (SCREEN_WIDTH - PANEL_WIDTH) / 2.0f;
-    float panelY = (SCREEN_HEIGHT - PANEL_HEIGHT) / 2.0f;
-
-    SDL_FRect panelRect{panelX, panelY, PANEL_WIDTH, PANEL_HEIGHT};
-
-    SDL_SetRenderDrawColor(renderer, 20, 10, 15, 255);
-    SDL_RenderFillRect(renderer, &panelRect);
-
-    SDL_SetRenderDrawColor(renderer, 220, 50, 50, 255);
-    SDL_RenderRect(renderer, &panelRect);
-
-    constexpr float DECO_BAR_W = 120.0f;
-    constexpr float DECO_BAR_H = 10.0f;
-
-    SDL_FRect decoBar{
-        panelX + (PANEL_WIDTH - DECO_BAR_W) / 2.0f,
-        panelY + 40.0f,
-        DECO_BAR_W,
-        DECO_BAR_H
-    };
-
-    SDL_SetRenderDrawColor(renderer, 220, 50, 50, 255);
-    SDL_RenderFillRect(renderer, &decoBar);
+Scene::Render(renderer);
 }

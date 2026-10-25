@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Engine/Component.hpp"
-
+#include "Physics/BallComponent.hpp"
 class TransformComponent;
 
 class PlayerControllerComponent2 : public Component
@@ -13,6 +13,7 @@ public:
 
 private:
     TransformComponent *m_ballTransform{nullptr};
+    BallComponent *m_ball{nullptr};
 
 public:
     PlayerControllerComponent2() = default;
@@ -23,7 +24,10 @@ public:
     {
         m_ballTransform = ballTransform;
     }
-
+    void BallComponent1(BallComponent *Ball)
+    {
+        m_ball= Ball;
+    }
 
     void FixedUpdate(float dt) override;
 };

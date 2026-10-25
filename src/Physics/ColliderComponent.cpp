@@ -1,6 +1,6 @@
 #include "Physics/ColliderComponent.hpp"
 #include "Engine/GameObject.hpp"
-#include "Engine/TransformComponent.hpp"
+#include "Engine/Components/TransformComponent.hpp"
 
 ColliderComponent::ColliderComponent(Vector2 size)
     : size(size)

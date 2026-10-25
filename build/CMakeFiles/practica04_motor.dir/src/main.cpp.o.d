@@ -275,9 +275,9 @@ CMakeFiles/practica04_motor.dir/src/main.cpp.o: \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/GameObject.hpp \
  /usr/include/c++/15/utility /usr/include/c++/15/bits/stl_relops.h \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Component.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/TransformComponent.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/RectRenderComponent.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/PlayerControllerComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/TransformComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/RectRenderComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/PlayerControllerComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/PatrolComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/ColliderComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/CollisionManager.hpp \

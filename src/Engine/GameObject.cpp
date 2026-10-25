@@ -5,8 +5,6 @@ GameObject::GameObject(std::string tag)
 {
 }
 
-// Al definir el destructor aquí, unique_ptr<Component> puede ver la
-// definición completa de Component sin causar incomplete type errors.
 GameObject::~GameObject() = default;
 
 void GameObject::Update(float dt)

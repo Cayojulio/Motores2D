@@ -247,7 +247,7 @@ CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o: \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Component.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/CollisionManager.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/SceneManager.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/VidasComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/VidasComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Math/Vector2.hpp \
  /usr/include/c++/15/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -279,12 +279,12 @@ CMakeFiles/practica04_motor.dir/src/Game/GameScene.cpp.o: \
  /usr/include/c++/15/bits/uniform_int_dist.h \
  /usr/include/c++/15/bits/ranges_algo.h \
  /usr/include/c++/15/pstl/glue_algorithm_defs.h \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/TransformComponent.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/RectRenderComponent.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/PlayerControllerComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/TransformComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/RectRenderComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/PlayerControllerComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/ColliderComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/PatrolComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Physics/BallComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Game/PauseScene.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Game/GameOverScene.hpp \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/PlayerControllerComponent2.hpp
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/PlayerControllerComponent2.hpp

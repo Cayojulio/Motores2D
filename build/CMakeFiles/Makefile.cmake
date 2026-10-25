@@ -19,6 +19,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/x86_64-linux-gnu/cmake/SDL3/SDL3staticTargets.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/SDL3/SDL3testTargets-none.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/SDL3/SDL3testTargets.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SDL3_image/SDL3_image-shared-targets-none.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SDL3_image/SDL3_image-shared-targets.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SDL3_image/SDL3_imageConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SDL3_image/SDL3_imageConfigVersion.cmake"
   "/usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-4.2/Modules/CMakeGenericSystem.cmake"
@@ -64,5 +68,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/practica04_motor.dir/DependInfo.cmake"
+  "CMakeFiles/practica06.dir/DependInfo.cmake"
   )

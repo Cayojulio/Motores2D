@@ -3,7 +3,7 @@
 #include <memory>
 #include <vector>
 #include <SDL3/SDL.h>
-
+#include "Engine/ResourceManager.hpp"
 class Scene; 
 
 class SceneManager
@@ -20,7 +20,9 @@ public:
     SceneManager() = default;
     ~SceneManager() = default;
 
-    
+
+    void SetResourceManager(ResourceManager* rm) { m_resourceManager = rm; }
+    ResourceManager* GetResourceManager() const { return m_resourceManager; }
     void ChangeScene(std::unique_ptr<Scene> new_scene);
     void PushScene(std::unique_ptr<Scene> new_scene);
     void PopScene();
@@ -36,5 +38,6 @@ private:
     std::vector<std::unique_ptr<Scene>> m_scenes;
     SceneAction m_pendingAction{SceneAction::None};
     std::unique_ptr<Scene> m_pendingScene{nullptr};
+    ResourceManager* m_resourceManager{nullptr};
 
 };

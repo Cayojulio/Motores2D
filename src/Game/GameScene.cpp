@@ -3,17 +3,19 @@
 #include <SDL3/SDL.h>
 
 #include "Engine/SceneManager.hpp"
-#include "Engine/VidasComponent.hpp"
+#include "Engine/Components/VidasComponent.hpp"
 #include "Engine/GameObject.hpp"
-#include "Engine/TransformComponent.hpp"
-#include "Engine/RectRenderComponent.hpp"
-#include "Engine/PlayerControllerComponent.hpp"
+#include "Engine/Components/TransformComponent.hpp"
+#include "Engine/Components/RectRenderComponent.hpp"
+#include "Engine/Components/PlayerControllerComponent.hpp"
 #include "Physics/ColliderComponent.hpp"
 #include "Physics/PatrolComponent.hpp"
 #include "Physics/BallComponent.hpp"
+#include "Engine/ResourceManager.hpp"
 #include "Game/PauseScene.hpp"
+#include "Engine/Components/SpriteComponent.hpp"
 #include "Game/GameOverScene.hpp"
-#include "Engine/PlayerControllerComponent2.hpp"
+#include "Engine/Components/PlayerControllerComponent2.hpp"
 
 GameScene::GameScene(SceneManager *manager)
     : Scene(manager, "GameScene"),
@@ -23,17 +25,27 @@ GameScene::GameScene(SceneManager *manager)
 
 void GameScene::Init()
 {
+ResourceManager* rm = GetResourceManager();
+    if (!rm)  return;
+
+
+    SDL_Texture* pelotita = rm->GetTexture("assets/pelotota.png");
     m_entities.clear();
     m_collisionManager.SetEntities(&m_entities);
 
 // Pelota
     auto pelota = std::make_unique<GameObject>("Pelota");
     auto* ballTransform = pelota->AddComponent<TransformComponent>(Vector2{468.0f, 80.0f});
-    pelota->AddComponent<RectRenderComponent>(Vector2{10.0f, 10.0f}, SDL_Color{255, 255, 255, 255});
-    pelota->AddComponent<ColliderComponent>(Vector2{10.0f, 10.0f});
-    pelota->AddComponent<BallComponent>();
-    m_entities.push_back(std::move(pelota));
 
+    pelota->AddComponent<ColliderComponent>(Vector2{15.0f, 15.0f});
+    auto* ballcomponent = pelota->AddComponent<BallComponent>();
+        auto* spriteComp = pelota->AddComponent<SpriteComponent>(pelotita);
+    if (spriteComp)
+    {
+        spriteComp->Size(15.0f,15.0f); 
+           SDL_Log("Si cargo %s", SDL_GetError());
+    }
+    m_entities.push_back(std::move(pelota));
 //Player 1
     auto player = std::make_unique<GameObject>("Player");
     player->AddComponent<TransformComponent>(Vector2{100.0f, 0.0f});
@@ -54,6 +66,7 @@ void GameScene::Init()
     player2->AddComponent<ColliderComponent>(Vector2{15.0f, 50.0f});
     auto* controller2 = player2->AddComponent<PlayerControllerComponent2>(500.0f, false, true);
     controller2->BallTransform(ballTransform);
+    controller2->BallComponent1(ballcomponent);
     auto* vidas2 = player2->AddComponent<VidasComponent>(5, LadoCampo::Derecha);
     vidas2->BallTransform(ballTransform);
     vidas2->PosicionarBarras(Vector2{800.0f, 20.0f});

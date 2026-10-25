@@ -6,7 +6,14 @@ Scene::Scene(SceneManager *manager, std::string name)
     : m_manager(manager), m_name(std::move(name))
 {
 }
-
+ResourceManager* Scene::GetResourceManager() const
+{
+    if (m_manager)
+    {
+        return m_manager->GetResourceManager(); 
+    }
+    return nullptr;
+}
 void Scene::Init() 
 {
 }

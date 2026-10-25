@@ -6,9 +6,9 @@
 #include <SDL3/SDL_main.h>
 #include "Math/Vector2.hpp"
 #include "Engine/GameObject.hpp"
-#include "Engine/TransformComponent.hpp"
-#include "Engine/RectRenderComponent.hpp"
-#include "Engine/PlayerControllerComponent.hpp"
+#include "Engine/Components/TransformComponent.hpp"
+#include "Engine/Components/RectRenderComponent.hpp"
+#include "Engine/Components/PlayerControllerComponent.hpp"
 #include "Physics/PatrolComponent.hpp"
 #include "Physics/ColliderComponent.hpp"
 #include "Physics/CollisionManager.hpp"
@@ -17,7 +17,7 @@
 #include "Game/TitleScene.hpp"
 #include "Engine/Scene.hpp"
 #include "Engine/SceneManager.hpp"
-
+#include "Engine/ResourceManager.hpp"
 #include "Game/TitleScene.hpp"
 #include "Game/GameScene.hpp"
 #include "Game/GameOverScene.hpp"
@@ -31,6 +31,7 @@ SDL_Window *window{nullptr};
 Uint64 last_ticks{0};
 // El SceneManager ahora gobierna el estado completo de la aplicación
 SceneManager sceneManager;
+ResourceManager resourceManager;
 } appstate;
 
 SDL_AppResult SDL_AppInit(void **appstate, int argc, char **argv)
@@ -62,6 +63,8 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char **argv)
     ::appstate.window = window;
     ::appstate.renderer = renderer;
     ::appstate.last_ticks = SDL_GetTicks();
+    ::appstate.resourceManager.SetRenderer(renderer);
+    ::appstate.sceneManager.SetResourceManager(&::appstate.resourceManager);
     ::appstate.sceneManager.ChangeScene(std::make_unique<TitleScene>(&::appstate.sceneManager));
     ::appstate.sceneManager.ProcessPendingChanges();
 

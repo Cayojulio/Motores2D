@@ -1,9 +1,9 @@
-#include "Engine/VidasComponent.hpp"
+#include "Engine/Components/VidasComponent.hpp"
 #include <SDL3/SDL.h>
 #include <algorithm>
 
 #include "Engine/GameObject.hpp"
-#include "Engine/TransformComponent.hpp"
+#include "Engine/Components/TransformComponent.hpp"
 #include "Physics/BallComponent.hpp"
 
 VidasComponent::VidasComponent(int vidas, LadoCampo lado)

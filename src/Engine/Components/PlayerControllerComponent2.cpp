@@ -1,10 +1,10 @@
-#include "Engine/PlayerControllerComponent2.hpp"
+#include "Engine/Components/PlayerControllerComponent2.hpp"
 #include <SDL3/SDL.h>
 #include <cmath>
 
 #include "Engine/GameObject.hpp"
-#include "Engine/TransformComponent.hpp"
-#include "Engine/RectRenderComponent.hpp"
+#include "Engine/Components/TransformComponent.hpp"
+#include "Engine/Components/RectRenderComponent.hpp"
 
 PlayerControllerComponent2::PlayerControllerComponent2(float spd, bool mouse_follow, bool Act)
     : speed(spd), follow_mouse(mouse_follow), Activar(Act)
@@ -20,27 +20,47 @@ void PlayerControllerComponent2::FixedUpdate(float dt)
 
     Vector2 final_dir{0.0f, 0.0f};
     //AUtomatico
-    if (Activar)
-    {
-        if (m_ballTransform)
+ if (Activar)
+{
+    if (m_ballTransform && m_ball)
+    { 
+    if (m_ball->velocity.x>0.0f){
+        float player_center_y = transform->position.y;
+        if (auto *rect = owner->GetComponent<RectRenderComponent>())
         {
-            float player_center_y = transform->position.y;
-            if (auto *rect = owner->GetComponent<RectRenderComponent>())
+            player_center_y += (rect->size.y * transform->scale.y) * 0.5f;
+        }
+
+float error_offset = 10.0f; 
+float ball_center_y = m_ballTransform->position.y + error_offset;
+        float diff_y = ball_center_y - player_center_y;
+
+        constexpr float DEADZONE = 10.0f; 
+
+        if (std::abs(diff_y) > DEADZONE)
+        {
+           
+            float step = speed * dt;
+
+            if (step > std::abs(diff_y))
             {
-                player_center_y += (rect->size.y * transform->scale.y) * 0.5f;
+                transform->position.y += diff_y;
             }
-
-            float ball_center_y = m_ballTransform->position.y;
-            float diff_y = ball_center_y - player_center_y;
-
-            constexpr float DEADZONE = 5.0f;
-
-            if (std::abs(diff_y) > DEADZONE)
+            else
             {
-                final_dir.y = (diff_y > 0.0f) ? 1.0f : -1.0f;
+                float direction = (diff_y > 0.0f) ? 1.0f : -1.0f;
+                transform->position.y += direction * step;
             }
         }
+        }
+        else
+{
+ 
+    float center_y = 300.0f; 
+ 
+}
     }
+}
     else
     {
     //manual

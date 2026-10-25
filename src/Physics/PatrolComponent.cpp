@@ -1,7 +1,7 @@
 	#include "Physics/PatrolComponent.hpp"
 #include <cmath>
 #include "Engine/GameObject.hpp"
-#include "Engine/TransformComponent.hpp"
+#include "Engine/Components/TransformComponent.hpp"
 
 PatrolComponent::PatrolComponent(float spd, float dist)
     : speed(spd), distance(dist)

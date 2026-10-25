@@ -19360,3 +19360,121 @@ events:
         - "/usr/pkg"
         - "/opt"
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:29 (find_package)"
+    name: "SDL3_image"
+    configs:
+      -
+        filename: "SDL3_imageConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "sdl3_image-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "SDL3_image"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles/pkgRedirects/SDL3_imageConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles/pkgRedirects/sdl3_image-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/cayo/miniconda2/SDL3_imageConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/cayo/miniconda2/sdl3_image-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/cayo/miniconda2/condabin/SDL3_imageConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/cayo/miniconda2/condabin/sdl3_image-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/cayo/.juliaup/SDL3_imageConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/cayo/.juliaup/sdl3_image-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/SDL3_imageConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/sdl3_image-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/SDL3_imageConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/sdl3_image-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib/x86_64-linux-gnu/cmake/SDL3_image/SDL3_imageConfig.cmake"
+      mode: "config"
+      version: "3.4.0"
+    search_context:
+      ENV{PATH}:
+        - "/home/cayo/miniconda2/bin"
+        - "/home/cayo/miniconda2/condabin"
+        - "/home/cayo/.juliaup/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cayo/.dotnet/tools"
+        - "/home/cayo/fastq_screen_v0.13.0"
+        - "/home/cayo/fastq_screen_v0.14.0"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...

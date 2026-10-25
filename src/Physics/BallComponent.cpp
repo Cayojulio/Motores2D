@@ -3,8 +3,9 @@
 #include <SDL3/SDL.h>
 
 #include "Engine/GameObject.hpp"
-#include "Engine/TransformComponent.hpp"
-#include "Engine/RectRenderComponent.hpp"
+#include "Engine/Components/TransformComponent.hpp"
+#include "Engine/Components/RectRenderComponent.hpp"
+#include "Engine/Components/SpriteComponent.hpp"
 #include "Physics/ColliderComponent.hpp"
 
 void BallComponent::FixedUpdate(float dt)
@@ -12,31 +13,31 @@ void BallComponent::FixedUpdate(float dt)
     if (owner == nullptr) return;
 
     auto *transform = owner->GetComponent<TransformComponent>();
-    auto *render = owner->GetComponent<RectRenderComponent>();
+    auto *render = owner->GetComponent<ColliderComponent>();
 
     if (transform == nullptr || render == nullptr) return;
 
     transform->Translate(velocity * dt);
 
- 
+
     if (transform->position.x <= 0.0f)
     {
         velocity.x = std::abs(velocity.x);
         transform->position.x = 0.0f;
     }
-    else if (transform->position.x >= (960.0f - render->size.x))
+    else if (transform->position.x >= (960.0f - render->size.x)) 
     {
         velocity.x = -std::abs(velocity.x);
         transform->position.x = 960.0f - render->size.x;
     }
 
-    // Límites en Y
+    // --- Límites en Y 
     if (transform->position.y <= 0.0f)
     {
         velocity.y = std::abs(velocity.y);
         transform->position.y = 0.0f;
     }
-    else if (transform->position.y >= (540.0f - render->size.y))
+    else if (transform->position.y >= (540.0f - render->size.y)) 
     {
         velocity.y = -std::abs(velocity.y);
         transform->position.y = 540.0f - render->size.y;

@@ -1,9 +1,9 @@
-#include "Engine/PlayerControllerComponent.hpp"
+#include "Engine/Components/PlayerControllerComponent.hpp"
 #include <SDL3/SDL.h>
 
 #include "Engine/GameObject.hpp"
-#include "Engine/TransformComponent.hpp"
-#include "Engine/RectRenderComponent.hpp"
+#include "Engine/Components/TransformComponent.hpp"
+#include "Engine/Components/RectRenderComponent.hpp"
 
 PlayerControllerComponent::PlayerControllerComponent(float spd, bool mouse_follow)
     : speed(spd), follow_mouse(mouse_follow)

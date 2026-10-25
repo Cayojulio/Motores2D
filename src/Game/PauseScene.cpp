@@ -29,8 +29,9 @@ void PauseScene::Render(SDL_Renderer *renderer)
     constexpr float SCREEN_HEIGHT = 540.0f;
 
     SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
-    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 175);
-    SDL_FRect screen_overlay{0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT};
+
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 10); // Alfa = 175
+    SDL_FRect screen_overlay{0.0f, 0.0f, 960.0f, 540.0f};
     SDL_RenderFillRect(renderer, &screen_overlay);
 
     constexpr float BOX_WIDTH  = 220.0f;

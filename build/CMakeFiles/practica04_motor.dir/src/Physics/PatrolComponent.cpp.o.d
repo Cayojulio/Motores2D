@@ -269,7 +269,7 @@ CMakeFiles/practica04_motor.dir/src/Physics/PatrolComponent.cpp.o: \
  /usr/include/c++/15/pstl/glue_memory_defs.h \
  /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/utility \
  /usr/include/c++/15/bits/stl_relops.h \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/TransformComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/TransformComponent.hpp \
  /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Math/Vector2.hpp \
  /usr/include/c++/15/algorithm /usr/include/c++/15/bits/stl_algo.h \
  /usr/include/c++/15/bits/algorithmfwd.h \

@@ -5,13 +5,14 @@
 #include <memory>
 #include <SDL3/SDL.h>
 #include "Engine/GameObject.hpp"
-
+#include "Engine/ResourceManager.hpp"
 class SceneManager;
 class GameObject;
 
 class Scene
 {
 protected:
+    
     SceneManager *m_manager{nullptr};
     std::vector<std::unique_ptr<GameObject>> m_entities;
     std::string m_name;
@@ -19,14 +20,14 @@ protected:
 public:
     explicit Scene(SceneManager *manager, std::string name = "UnnamedScene");
     virtual ~Scene() = default;
-
+    
     // --- Gestión de Memoria (Sin copia) ---
     Scene(const Scene &) = delete;
     Scene &operator=(const Scene &) = delete;
 
     Scene(Scene &&) noexcept = default;
     Scene &operator=(Scene &&) noexcept = default;
-
+    ResourceManager* GetResourceManager() const;
     // --- Ciclo de Vida ---
     virtual void Init();
     virtual void Exit();

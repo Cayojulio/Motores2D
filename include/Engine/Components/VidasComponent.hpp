@@ -4,7 +4,7 @@
 #include <vector>
 #include <SDL3/SDL.h>
 #include "Math/Vector2.hpp"
-#include "Engine/TransformComponent.hpp"
+#include "Engine/Components/TransformComponent.hpp"
 enum class LadoCampo 
 { 
     Izquierda, 
