@@ -1,7 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/practica06.dir/link.d"
+  "CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o"
+  "CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o.d"
+  "CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o"
+  "CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o.d"
   "CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.o"
   "CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.o.d"
+  "CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o"
+  "CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o.d"
   "CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent.cpp.o"
   "CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent.cpp.o.d"
   "CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent2.cpp.o"

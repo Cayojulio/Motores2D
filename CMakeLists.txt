@@ -57,6 +57,11 @@ src/Engine/Components/PlayerControllerComponent2.cpp
 src/Engine/Components/PlayerControllerComponent.cpp
 src/Engine/Components/VidasComponent.cpp
 src/Engine/Components/BotonComponent.cpp
+src/Engine/Components/AnimationComponent.cpp
+src/Engine/Components/MapaComponent.cpp
+src/Engine/Camera2D.cpp
+include/Engine/Camera2D.hpp
+include/Engine/Components/AnimationComponent.hpp
 include/Math/Vector2.hpp
 include/Engine/Components/VidasComponent.hpp
 include/Engine/Components/TransformComponent.hpp
@@ -78,6 +83,7 @@ include/Game/PauseScene.hpp
 include/Engine/Components/PlayerControllerComponent2.hpp
 include/Engine/Components/SpriteComponent.hpp
 include/Engine/Components/BotonComponent.hpp
+include/Engine/Components/MapaComponent.hpp
 )
 target_include_directories(${PROJECT_NAME} PRIVATE include src)
 target_link_libraries(${PROJECT_NAME} PRIVATE ${SDL3_TARGET} ${SDL3_IMAGE_TARGET})

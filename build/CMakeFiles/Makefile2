@@ -85,12 +85,12 @@ clean: CMakeFiles/practica06.dir/clean
 CMakeFiles/practica06.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target practica06"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target practica06"
 .PHONY : CMakeFiles/practica06.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/practica06.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" 22
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/practica06.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" 0
 .PHONY : CMakeFiles/practica06.dir/rule
@@ -102,7 +102,7 @@ practica06: CMakeFiles/practica06.dir/rule
 # codegen rule for target.
 CMakeFiles/practica06.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Finished codegen for target practica06"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Finished codegen for target practica06"
 .PHONY : CMakeFiles/practica06.dir/codegen
 
 # clean rule for target.

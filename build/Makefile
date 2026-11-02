@@ -129,6 +129,54 @@ practica06/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/build
 .PHONY : practica06/fast
 
+src/Engine/Camera2D.o: src/Engine/Camera2D.cpp.o
+.PHONY : src/Engine/Camera2D.o
+
+# target to build an object file
+src/Engine/Camera2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o
+.PHONY : src/Engine/Camera2D.cpp.o
+
+src/Engine/Camera2D.i: src/Engine/Camera2D.cpp.i
+.PHONY : src/Engine/Camera2D.i
+
+# target to preprocess a source file
+src/Engine/Camera2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.i
+.PHONY : src/Engine/Camera2D.cpp.i
+
+src/Engine/Camera2D.s: src/Engine/Camera2D.cpp.s
+.PHONY : src/Engine/Camera2D.s
+
+# target to generate assembly for a file
+src/Engine/Camera2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.s
+.PHONY : src/Engine/Camera2D.cpp.s
+
+src/Engine/Components/AnimationComponent.o: src/Engine/Components/AnimationComponent.cpp.o
+.PHONY : src/Engine/Components/AnimationComponent.o
+
+# target to build an object file
+src/Engine/Components/AnimationComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o
+.PHONY : src/Engine/Components/AnimationComponent.cpp.o
+
+src/Engine/Components/AnimationComponent.i: src/Engine/Components/AnimationComponent.cpp.i
+.PHONY : src/Engine/Components/AnimationComponent.i
+
+# target to preprocess a source file
+src/Engine/Components/AnimationComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.i
+.PHONY : src/Engine/Components/AnimationComponent.cpp.i
+
+src/Engine/Components/AnimationComponent.s: src/Engine/Components/AnimationComponent.cpp.s
+.PHONY : src/Engine/Components/AnimationComponent.s
+
+# target to generate assembly for a file
+src/Engine/Components/AnimationComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.s
+.PHONY : src/Engine/Components/AnimationComponent.cpp.s
+
 src/Engine/Components/BotonComponent.o: src/Engine/Components/BotonComponent.cpp.o
 .PHONY : src/Engine/Components/BotonComponent.o
 
@@ -152,6 +200,30 @@ src/Engine/Components/BotonComponent.s: src/Engine/Components/BotonComponent.cpp
 src/Engine/Components/BotonComponent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.s
 .PHONY : src/Engine/Components/BotonComponent.cpp.s
+
+src/Engine/Components/MapaComponent.o: src/Engine/Components/MapaComponent.cpp.o
+.PHONY : src/Engine/Components/MapaComponent.o
+
+# target to build an object file
+src/Engine/Components/MapaComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o
+.PHONY : src/Engine/Components/MapaComponent.cpp.o
+
+src/Engine/Components/MapaComponent.i: src/Engine/Components/MapaComponent.cpp.i
+.PHONY : src/Engine/Components/MapaComponent.i
+
+# target to preprocess a source file
+src/Engine/Components/MapaComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.i
+.PHONY : src/Engine/Components/MapaComponent.cpp.i
+
+src/Engine/Components/MapaComponent.s: src/Engine/Components/MapaComponent.cpp.s
+.PHONY : src/Engine/Components/MapaComponent.s
+
+# target to generate assembly for a file
+src/Engine/Components/MapaComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica06.dir/build.make CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.s
+.PHONY : src/Engine/Components/MapaComponent.cpp.s
 
 src/Engine/Components/PlayerControllerComponent.o: src/Engine/Components/PlayerControllerComponent.cpp.o
 .PHONY : src/Engine/Components/PlayerControllerComponent.o
@@ -642,9 +714,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... practica06"
+	@echo "... src/Engine/Camera2D.o"
+	@echo "... src/Engine/Camera2D.i"
+	@echo "... src/Engine/Camera2D.s"
+	@echo "... src/Engine/Components/AnimationComponent.o"
+	@echo "... src/Engine/Components/AnimationComponent.i"
+	@echo "... src/Engine/Components/AnimationComponent.s"
 	@echo "... src/Engine/Components/BotonComponent.o"
 	@echo "... src/Engine/Components/BotonComponent.i"
 	@echo "... src/Engine/Components/BotonComponent.s"
+	@echo "... src/Engine/Components/MapaComponent.o"
+	@echo "... src/Engine/Components/MapaComponent.i"
+	@echo "... src/Engine/Components/MapaComponent.s"
 	@echo "... src/Engine/Components/PlayerControllerComponent.o"
 	@echo "... src/Engine/Components/PlayerControllerComponent.i"
 	@echo "... src/Engine/Components/PlayerControllerComponent.s"

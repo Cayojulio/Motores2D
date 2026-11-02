@@ -14,10 +14,11 @@ void GameOverScene::Init()
 {
 ResourceManager* rm = GetResourceManager();
     if (!rm)  return;
-    
+    auto* camera = Camera2D::GetMain();
+
     SDL_Texture* Game = rm->GetTexture("assets/Game.jpeg");
-
-
+    camera->SetViewportSize(960.0f,540.0f);
+    camera->SetPosition(Vector2{480.0f, 270.0f});
 constexpr float IMG_WIDTH  = 300.0f;
 constexpr float IMG_HEIGHT = 80.0f;
 float posX = (960.0f - IMG_WIDTH) / 2.0f;
@@ -33,7 +34,7 @@ if (sprite)
 }
 
 m_entities.push_back(std::move(gameOverObj));
- 
+ camera->CenterOn(Vector2{480.0f, 270.0f});
     }
 
 void GameOverScene::HandleEvent(const SDL_Event &event)

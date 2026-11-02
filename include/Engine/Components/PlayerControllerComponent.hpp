@@ -12,7 +12,7 @@ class PlayerControllerComponent : public Component
 public:
     float speed{300.0f};
     bool follow_mouse{true};
-
+    bool isMoving = false;
     PlayerControllerComponent() = default;
     explicit PlayerControllerComponent(float spd, bool mouse_follow = true);
 

@@ -2,6 +2,8 @@ practica06: \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/15/libasan_preinit.o \
+  /usr/lib/gcc/x86_64-linux-gnu/15/libasan.so \
   CMakeFiles/practica06.dir/src/main.cpp.o \
   CMakeFiles/practica06.dir/src/Math/Vector2.cpp.o \
   CMakeFiles/practica06.dir/src/Engine/GameObject.cpp.o \
@@ -23,6 +25,9 @@ practica06: \
   CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent.cpp.o \
   CMakeFiles/practica06.dir/src/Engine/Components/VidasComponent.cpp.o \
   CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.o \
+  CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o \
+  CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o \
+  CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o \
   /usr/lib/x86_64-linux-gnu/libSDL3_image.so.0.4.0 \
   /usr/lib/x86_64-linux-gnu/libSDL3.so.0.4.2 \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
@@ -154,6 +159,10 @@ practica06: \
 
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
+/usr/lib/gcc/x86_64-linux-gnu/15/libasan_preinit.o:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/libasan.so:
+
 CMakeFiles/practica06.dir/src/main.cpp.o:
 
 CMakeFiles/practica06.dir/src/Math/Vector2.cpp.o:
@@ -195,6 +204,12 @@ CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent.cpp.o:
 CMakeFiles/practica06.dir/src/Engine/Components/VidasComponent.cpp.o:
 
 CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.o:
+
+CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o:
+
+CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o:
+
+CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libSDL3_image.so.0.4.0:
 

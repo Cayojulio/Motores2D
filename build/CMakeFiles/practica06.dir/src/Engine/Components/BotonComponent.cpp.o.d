@@ -275,4 +275,5 @@ CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.o: \
  /usr/include/c++/15/bits/ranges_uninitialized.h \
  /usr/include/c++/15/pstl/glue_memory_defs.h /usr/include/c++/15/utility \
  /usr/include/c++/15/bits/stl_relops.h \
- /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/SpriteComponent.hpp
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Components/SpriteComponent.hpp \
+ /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/include/Engine/Camera2D.hpp

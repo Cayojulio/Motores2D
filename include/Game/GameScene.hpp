@@ -2,7 +2,8 @@
 
 #include "Engine/Scene.hpp"
 #include "Physics/CollisionManager.hpp"
-
+#include "Engine/Camera2D.hpp"
+#include "Engine/Components/AnimationComponent.hpp"
 class SceneManager;
 class PauseScene;
 class GameOverScene;

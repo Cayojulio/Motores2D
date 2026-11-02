@@ -17,9 +17,11 @@ struct Vector2
     Vector2 operator-(const Vector2 &other) const;
     Vector2 operator*(float scalar) const;
 
+
     // Métodos de utilidad y magnitud
     Vector2 clamp(const Vector2 &min, const Vector2 &max) const;
     float length_squared() const;
     float length() const;
     Vector2 normalized() const;
+    static Vector2 Lerp(const Vector2& a, const Vector2& b, float t);
 };

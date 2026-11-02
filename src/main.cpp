@@ -32,6 +32,7 @@ Uint64 last_ticks{0};
 // El SceneManager ahora gobierna el estado completo de la aplicación
 SceneManager sceneManager;
 ResourceManager resourceManager;
+Camera2D m_Camera;
 } appstate;
 
 SDL_AppResult SDL_AppInit(void **appstate, int argc, char **argv)

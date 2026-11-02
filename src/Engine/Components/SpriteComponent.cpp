@@ -5,32 +5,59 @@
 
 void SpriteComponent::Render(SDL_Renderer *renderer)
 {
-if (!renderer || !m_texture)
-{
-return;
-}
-SDL_FRect dstRect{0.0f, 0.0f, m_width, m_height};
-double rotation = 0.0;
-if (owner)
-{
-auto *transform = owner->GetComponent<TransformComponent>();
-if (transform)
-{
-dstRect.x = transform->position.x;
-dstRect.y = transform->position.y;
-dstRect.w = (m_useSrcRect ? m_srcRect.w : m_width) * transform->scale.x;
-dstRect.h = (m_useSrcRect ? m_srcRect.h : m_height) * transform->scale.y;
-}
-}
-// Aplicar modulación de color y alfa al recurso compartido (Flyweight)
-SDL_SetTextureColorModFloat(m_texture, m_colorMod.r, m_colorMod.g,
-m_colorMod.b);
-SDL_SetTextureAlphaModFloat(m_texture, m_colorMod.a);
+    if (!renderer || !m_texture)
+    {
+        return;
+    }
 
-const SDL_FRect *src = m_useSrcRect ? &m_srcRect : nullptr;
-SDL_RenderTextureRotated(renderer, m_texture, src, &dstRect, rotation,
-nullptr, m_flip);
-// Restaurar modulación por defecto para no contaminar a otros sprites
-SDL_SetTextureColorModFloat(m_texture, 1.0f, 1.0f, 1.0f);
-SDL_SetTextureAlphaModFloat(m_texture, 1.0f);
+    SDL_FRect dstRect{0.0f, 0.0f, m_width, m_height};
+    double rotation = 0.0;
+
+    if (owner)
+    {
+        auto *transform = owner->GetComponent<TransformComponent>();
+        if (transform)
+        {
+            dstRect.x = transform->position.x;
+            dstRect.y = transform->position.y;
+            dstRect.w = (m_useSrcRect ? m_srcRect.w : m_width) * transform->scale.x;
+            dstRect.h = (m_useSrcRect ? m_srcRect.h : m_height) * transform->scale.y;
+
+            if (m_affectedByCamera)
+            {
+            auto *camera = Camera2D::GetMain(); 
+            if (camera)
+            {
+            if (m_parallaxFactor.x > 0.0f || m_parallaxFactor.y > 0.0f)
+            {
+            if (!camera->IsVisible(dstRect))
+                        {
+            return; 
+            }
+                }
+
+ dstRect = camera->ApplyToRect(dstRect, m_parallaxFactor);
+            }
+            }
+            }
+           }
+
+    const SDL_FRect *src = m_useSrcRect ? &m_srcRect : nullptr;
+    
+    SDL_RenderTextureRotated(renderer, m_texture, src, &dstRect, rotation, nullptr, SDL_FLIP_NONE);
+
+    // Restaurar modulaciones por defecto
+    SDL_SetTextureColorMod(m_texture, 255, 255, 255);
+    SDL_SetTextureAlphaMod(m_texture, 255);
+}
+
+void SpriteComponent::SetSrcRect(const SDL_FRect &rect)
+{
+    m_srcRect = rect;
+    m_useSrcRect = true;
+}
+
+void SpriteComponent::SetUseSrcRect(bool use)
+{
+    m_useSrcRect = use;
 }

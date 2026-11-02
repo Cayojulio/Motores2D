@@ -22,6 +22,14 @@ Vector2 Vector2::clamp(const Vector2 &min, const Vector2 &max) const
         std::clamp(y, min.y, max.y)
     };
 }
+Vector2 Vector2::Lerp(const Vector2& a, const Vector2& b, float t)
+{
+    return Vector2{
+        a.x + (b.x - a.x) * t,
+        a.y + (b.y - a.y) * t
+    };
+}
+
 
 float Vector2::length_squared() const
 {

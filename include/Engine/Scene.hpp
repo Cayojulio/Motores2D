@@ -6,6 +6,7 @@
 #include <SDL3/SDL.h>
 #include "Engine/GameObject.hpp"
 #include "Engine/ResourceManager.hpp"
+#include "Engine/Camera2D.hpp"
 class SceneManager;
 class GameObject;
 

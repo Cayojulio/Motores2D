@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Camera2D.cpp" "CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o" "gcc" "CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o.d"
+  "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/AnimationComponent.cpp" "CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o" "gcc" "CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o.d"
   "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/BotonComponent.cpp" "CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.o" "gcc" "CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.o.d"
+  "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/MapaComponent.cpp" "CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o" "gcc" "CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o.d"
   "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/PlayerControllerComponent.cpp" "CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent.cpp.o" "gcc" "CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent.cpp.o.d"
   "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/PlayerControllerComponent2.cpp" "CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent2.cpp.o" "gcc" "CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent2.cpp.o.d"
   "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/RectRenderComponent.cpp" "CMakeFiles/practica06.dir/src/Engine/Components/RectRenderComponent.cpp.o" "gcc" "CMakeFiles/practica06.dir/src/Engine/Components/RectRenderComponent.cpp.o.d"

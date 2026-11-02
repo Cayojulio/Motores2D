@@ -366,6 +366,48 @@ CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/BotonComponent.cpp" -o CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.s
 
+CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o: CMakeFiles/practica06.dir/flags.make
+CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/Components/AnimationComponent.cpp
+CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o: CMakeFiles/practica06.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o -MF CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o.d -o CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/AnimationComponent.cpp"
+
+CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/AnimationComponent.cpp" > CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.i
+
+CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/AnimationComponent.cpp" -o CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.s
+
+CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o: CMakeFiles/practica06.dir/flags.make
+CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/Components/MapaComponent.cpp
+CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o: CMakeFiles/practica06.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o -MF CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o.d -o CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/MapaComponent.cpp"
+
+CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/MapaComponent.cpp" > CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.i
+
+CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Components/MapaComponent.cpp" -o CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.s
+
+CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o: CMakeFiles/practica06.dir/flags.make
+CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o: /home/cayo/Downloads/Motores\ 2D/Plantilla\ 03/semana02/plantilla/src/Engine/Camera2D.cpp
+CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o: CMakeFiles/practica06.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o -MF CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o.d -o CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o -c "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Camera2D.cpp"
+
+CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Camera2D.cpp" > CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.i
+
+CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/src/Engine/Camera2D.cpp" -o CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.s
+
 # Object files for target practica06
 practica06_OBJECTS = \
 "CMakeFiles/practica06.dir/src/main.cpp.o" \
@@ -388,7 +430,10 @@ practica06_OBJECTS = \
 "CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent2.cpp.o" \
 "CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent.cpp.o" \
 "CMakeFiles/practica06.dir/src/Engine/Components/VidasComponent.cpp.o" \
-"CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.o"
+"CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.o" \
+"CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o" \
+"CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o" \
+"CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o"
 
 # External object files for target practica06
 practica06_EXTERNAL_OBJECTS =
@@ -414,12 +459,15 @@ practica06: CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComp
 practica06: CMakeFiles/practica06.dir/src/Engine/Components/PlayerControllerComponent.cpp.o
 practica06: CMakeFiles/practica06.dir/src/Engine/Components/VidasComponent.cpp.o
 practica06: CMakeFiles/practica06.dir/src/Engine/Components/BotonComponent.cpp.o
+practica06: CMakeFiles/practica06.dir/src/Engine/Components/AnimationComponent.cpp.o
+practica06: CMakeFiles/practica06.dir/src/Engine/Components/MapaComponent.cpp.o
+practica06: CMakeFiles/practica06.dir/src/Engine/Camera2D.cpp.o
 practica06: CMakeFiles/practica06.dir/build.make
 practica06: CMakeFiles/practica06.dir/compiler_depend.ts
 practica06: /usr/lib/x86_64-linux-gnu/libSDL3_image.so.0.4.0
 practica06: /usr/lib/x86_64-linux-gnu/libSDL3.so.0.4.2
 practica06: CMakeFiles/practica06.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable practica06"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/cayo/Downloads/Motores 2D/Plantilla 03/semana02/plantilla/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable practica06"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/practica06.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
